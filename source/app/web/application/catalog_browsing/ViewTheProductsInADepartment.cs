@@ -26,4 +26,8 @@ namespace app.web.application.catalog_browsing
       display_engine.display(product_finder.get_products_of_department(request.map<ProductsInDepartmentInput>()));
     }
   }
+
+
+
+
 }
