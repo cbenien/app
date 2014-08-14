@@ -92,13 +92,15 @@
     <Compile Include="container\IFetchDependencies.cs" />
     <Compile Include="MessageGenerator.cs" />
     <Compile Include="startup\ConfiguringRoutes.cs" />
+    <Compile Include="startup\IConstructAStartupStep.cs" />
+    <Compile Include="startup\IStartupBuilder.cs" />
     <Compile Include="startup\InitializingTheContainer.cs" />
     <Compile Include="startup\IProvideStartupServices.cs" />
     <Compile Include="startup\IRunAStartupStep.cs" />
     <Compile Include="startup\RegisterWebComponents.cs" />
     <Compile Include="startup\StartTheApp.cs" />
     <Compile Include="startup\Startup.cs" />
-    <Compile Include="structuremap_container\StructureMapContainer.cs" />
+    <Compile Include="startup\StartupBuilder.cs" />
     <Compile Include="web\application\catalog_browsing\DeparmentsInDepartmentInput.cs" />
     <Compile Include="web\application\catalog_browsing\MainDepartmentLineItem.cs" />
     <Compile Include="web\application\catalog_browsing\ProductInfoItem.cs" />
@@ -130,6 +132,9 @@
     <Compile Include="web\core\IProvideRequestDetails.cs" />
     <Compile Include="web\core\ISupportAUserStory.cs" />
     <Compile Include="web\core\RequestCommand.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="structuremap_container\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
